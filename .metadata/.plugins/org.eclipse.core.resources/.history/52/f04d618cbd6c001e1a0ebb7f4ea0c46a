@@ -1,0 +1,22 @@
+package com.magic.dao.EmployeesDAO;
+
+import java.sql.Connection;
+
+public class EmployeesDAO {
+private EmployeesDAO() {
+}
+
+private static EmployeesDAO instance = new EmployeesDAO();
+
+public static EmployeesDAO getInstance() {
+	return instance;
+}
+public Connection getConnection() {
+	Context initContext = new InitialContext();
+	Context envContext  = (Context)initContext.lookup("java:/comp/env");
+	DataSource ds = (DataSource)envContext.lookup("jdbc/myoracle"); //추가한 리소스 name과 동일
+	Connection conn = ds.getConnection();
+	return conn;
+}
+
+}

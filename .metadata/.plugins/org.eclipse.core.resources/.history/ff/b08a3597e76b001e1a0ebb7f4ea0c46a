@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+${loginUser}
+<!-- session.setAttribute("loginUser", vo); //loginUser는 섹션이라 브라우저 끄기 전까지 값이 기억됨, vo로 값을 받아와서 전부 출력됨(toString한대로..)
+결과는 이렇게 출력됨 MemberVO(name=이소미, userid=somi, pwd=1234, email=somi@naver.com, phone=010-111-2222 , admin=0)
+ -->
+</body>
+</html>

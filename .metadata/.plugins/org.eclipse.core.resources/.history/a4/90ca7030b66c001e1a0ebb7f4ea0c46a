@@ -1,0 +1,13 @@
+package com.magic.dto.EmployeesDAO;
+
+public class EmployeesDAO {
+private EmployeesDAO() {
+}
+
+private static EmployeesDAO instance = new EmployeesDAO();
+
+public static EmployeesDAO getInstance() {
+	return instance;
+}
+
+}

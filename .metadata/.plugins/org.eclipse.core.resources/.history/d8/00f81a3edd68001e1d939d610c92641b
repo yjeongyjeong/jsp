@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!-- con, ps, rs 선언(한번만 수행될거라 여기서 선언함) url, user, pwd, sql은 선택사항(근데 선언하는편이 나중에 변경할때 좋겠다!) 
+이후 body에서 requestcharsetutf8, 
+class.forname(oracle주소) 하고 con, ps, rs 에게 값 주기
+con : drivermanager.getconnection(url, user, pwd) 연결
+ps : con.prepareStatement(sql) -> rs하고 executeupdate 해줘야함!!
+rs : ps.executeQuery(sql) 
+-->
+<%!
+
+
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

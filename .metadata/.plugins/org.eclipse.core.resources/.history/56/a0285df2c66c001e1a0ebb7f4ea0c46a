@@ -1,0 +1,48 @@
+package com.magic.Controller;
+
+import java.io.IOException;
+import java.sql.Connection;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.sql.DataSource;
+
+import com.magic.dao.EmployeesDAO.EmployeesDAO;
+import com.magic.dto.EmployeesVO.EmployeesVO;
+
+
+@WebServlet("/login.do")
+public class LoginServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		RequestDispatcher dis = request.getRequestDispatcher("member/login.jsp");
+		dis.forward(request, response);
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
+		String id = request.getParameter("id");
+		String pwd = request.getParameter("pwd");
+		String lev = request.getParameter("lev");
+		String url = "member/login.jsp";
+		
+		EmployeesDAO mDao = EmployeesDAO.getInstance();
+		/* 로그인 시 result 값에 따라 회원 구별
+		 * 1 = 로그인 성공
+		 * 0 = 암호 틀림
+		 * -1 아이디 없음!!*/
+		int result = mDao.userCheck(id, pwd);
+		if( result == 1 ) {
+			EmployeesVO vo = mDao.getEmployees(id); //getEmployees도 vo로 회원정보를 가져옴
+			
+		}
+	}
+
+}

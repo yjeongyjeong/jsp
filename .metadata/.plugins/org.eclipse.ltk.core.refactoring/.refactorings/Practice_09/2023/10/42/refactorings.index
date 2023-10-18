@@ -1,0 +1,7 @@
+1697524024767	Rename package 'com.magic.dto.EmployeesDAO'
+1697524208445	Move 'member' to 'webapp'
+1697524829178	Move 'header.jsp' to 'webapp'
+1697524843855	Rename resource 'header.jsp'
+1697524870606	Rename resource 'headerUnlogin.jsp'
+1697525028339	Move 2 resources to 'member'
+1697526417423	Rename type 'Login'

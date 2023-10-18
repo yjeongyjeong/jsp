@@ -1,0 +1,27 @@
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<%!
+	Connection con = null;
+	PreparedStatement ps = null;
+	
+	String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	String uid = "scott";
+	String pwd = "tiger";
+	String sql = "insert into member values(?,?,?,?,?,?)";
+
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%request.setCharacterEncoding("utf-8"); %>
+
+
+</body>
+</html>

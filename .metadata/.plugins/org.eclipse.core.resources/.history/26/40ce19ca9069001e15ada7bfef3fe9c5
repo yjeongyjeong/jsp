@@ -1,0 +1,10 @@
+package com.saeyan.dao;
+
+//DB와 연동 (DB 접속)
+//싱글톤
+public class MemberDAO {
+	private MemberDAO() {
+
+	}
+	private static MemberDAO instance = new MemberDAO();
+}

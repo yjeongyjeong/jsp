@@ -1,0 +1,10 @@
+package com.saeyan.dao;
+
+public class MemberDAO {
+//private 생성자로 만들어서 싱글톤 패턴
+	private MemberDAO() {	}
+	public MemberDAO getInstance() {
+		return new memberDAO();
+	}
+}
+

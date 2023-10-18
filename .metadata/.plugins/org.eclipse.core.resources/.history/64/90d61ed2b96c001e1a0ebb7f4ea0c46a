@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<div class="container">
+  <table >
+      <tr>
+      	<th></th>
+      	<th></th>
+        <th>로그인</th>
+        <th>사원등록</th>
+        <th>마이페이지</th>
+      </tr>
+  </table>
+</div>

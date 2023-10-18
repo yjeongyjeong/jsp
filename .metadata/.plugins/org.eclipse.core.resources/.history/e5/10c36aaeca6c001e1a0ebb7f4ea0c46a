@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<style>
+table, th, td {
+  border: 1px solid black;
+   border-collapse : collapse;
+}
+th{ /* 사이즈 어케주냐... */
+width: 150px;
+}
+table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+</style>
+<br>
+<table>
+  <colgroup>
+    <col span="4" style="background-color:gray">
+    <col style="background-color:pink">
+  </colgroup>
+  <tr>
+  	<th>모르겟는디</th>
+   	<th>어케하는지</th>
+    <th>로그인</th>
+    <th>사원 등록</th>
+    <th>마이페이지</th>
+ </table>
+<br>

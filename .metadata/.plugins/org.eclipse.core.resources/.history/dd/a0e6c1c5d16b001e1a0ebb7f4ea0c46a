@@ -1,0 +1,7 @@
+function loginCheck(){
+	if(document.frm.userid.value.length == 0){
+		/*frm(jsp파일에서 name으로 줌), userid id로 줌*/
+		alert("아이디를 입력하세요.")
+	}
+
+}

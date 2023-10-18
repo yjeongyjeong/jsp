@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<br>
+<table>
+	<tr>
+		<th></th>
+		<th></th>
+		<th>로그인</th>
+		<th>사원등록<script type="text/javascript" style="font-style: italic;">(관리자로 로그인 후 사용가능)</script></th>
+		<th>마이페이지<script type="text/javascript" style="font-style: italic;">(로그인 후 사용가능)</script></th>
+	</tr>
+
+
+</table>
+<br>

@@ -1,0 +1,41 @@
+package com.magic.dao.EmployeesDAO;
+
+import java.sql.Connection;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+import com.magic.dto.EmployeesVO.EmployeesVO;
+
+public class EmployeesDAO {
+private EmployeesDAO() {
+}
+
+private static EmployeesDAO instance = new EmployeesDAO();
+
+public static EmployeesDAO getInstance() {
+	return instance;
+}
+public Connection getConnection() throws Exception {
+	Context initContext = new InitialContext();
+	Context envContext  = (Context)initContext.lookup("java:/comp/env");
+	DataSource ds = (DataSource)envContext.lookup("jdbc/myoracle"); //추가한 리소스 name과 동일
+	Connection conn = ds.getConnection();
+	return conn;
+}
+
+
+public int userCheck(String id, String pwd) {
+	return 0;
+}
+
+public EmployeesVO getEmployees(EmployeesVO vo) {
+	return vo;
+}
+
+public int updateEmployees(EmployeesVO vo) {
+	return 0;
+}
+
+}

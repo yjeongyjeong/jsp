@@ -1,0 +1,3 @@
+function loginCheck(){
+	alert("여기 오니?");
+}

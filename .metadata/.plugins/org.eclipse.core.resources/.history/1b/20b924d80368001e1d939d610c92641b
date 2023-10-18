@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String id = "test";
+	String pwd = "1234+";
+	String name = "조조";
+	if(id.equals(request.getParameter(name)) &&
+			pwd.equals(request.getParameter("pwd")){
+		
+	};
+	
+	
+
+%>

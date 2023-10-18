@@ -1,0 +1,42 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./script/member.js"></script>
+<!-- . -> 이 폴더 빠져나가서 /들어가라고 -->
+
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>회원 전용 페이지</h1>
+	<form action="login.do" method="post" name="frm">
+
+		안녕하세요 ${loginUser.name}(${loginUser.userid}) 님
+		<!-- session.setAttribute("loginUser", vo); //loginUser는 섹션이라 브라우저 끄기 전까지 값이 기억됨, vo로 값을 받아와서 전부 출력됨(toString한대로..)
+결과는 이렇게 출력됨 MemberVO(name=이소미, userid=somi, pwd=1234, email=somi@naver.com, phone=010-111-2222 , admin=0)
+ -->
+		<br>
+		<button type="reset" class="btn btn-success">로그아웃</button>
+		<button type="button" class="btn btn-info"
+			onclick="location.href='join.do'">회원정보변경</button>
+		<!-- 클릭 시 join.do로 가도록 함 -->
+		<hr>
+		<h3 style="color: red;">${message}</h3>
+
+
+
+	</form>
+
+</body>
+</html>

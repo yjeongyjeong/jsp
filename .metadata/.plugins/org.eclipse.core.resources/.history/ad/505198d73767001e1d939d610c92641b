@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="param.js"></script>
+</head>
+<body> 
+<!-- 따옴표 치든말든 상관없음 name에서.. -->
+	<form action="ParamServlet" method="get" name="frm">
+		아이디 : <input type="text" name="id"><br>
+		나&nbsp;&nbsp;이 : <input type="text" name=age><br>
+		<input type="submit" value=""전송"">
+	
+	</form>
+</body>
+</html>
