@@ -13,8 +13,7 @@
 MemberDAO mDao = MemberDAO.getInstance();
 Connection conn = mDao.getConnection();
 System.out.println("conn : " + conn);
-out.print("conn L " + conn);
-
+out.print("conn : " + conn);
 %>
 
 </body>

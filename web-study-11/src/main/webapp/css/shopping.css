@@ -1,0 +1,41 @@
+#wrap{
+    width: 971px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: green;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+table td, th{
+    border: #d3d3de solid 1px;
+    padding: 5px;
+}
+
+th{
+    background: yellowgreen;
+    width: 120px;
+}
+
+img{
+    width: 220px;
+    height: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: green;
+}
