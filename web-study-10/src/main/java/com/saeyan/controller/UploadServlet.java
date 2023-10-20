@@ -23,7 +23,7 @@ public class UploadServlet extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 		
 		PrintWriter out = response.getWriter();
-		String savePath = "upload"; //다운받을 경로
+		String savePath = "upload"; //다운받을 경로(저장되는 곳 폴더이름)
 		int uploadFileSize = 5*1024*1024; //5MB까지로 제한
 		String encType = "utf-8";
 		
@@ -35,11 +35,11 @@ public class UploadServlet extends HttpServlet {
 		try {
 			MultipartRequest multi 
 			= new MultipartRequest(
-					request, 
+					request, //MultipartRequest와 연결할 request 객체
 					uploadFilePath, //서버상 실제 파일 저장 경로
 					uploadFileSize, //파일 제한 크기 (5MB)
 					encType, //인코딩
-					new DefaultFileRenamePolicy() //파일중복시 파일명 뒤에 숫자첨부
+					new DefaultFileRenamePolicy() //중복처리를 위한 매개변수 ->파일중복시 파일명 뒤에 숫자첨부
 					);
 			//서버 저장된 파일명(실제 파일명과 상이할 수 잇음)
 			String fileName = multi.getFilesystemName("uploadFile") ;

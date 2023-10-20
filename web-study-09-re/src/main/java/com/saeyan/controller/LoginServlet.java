@@ -35,6 +35,7 @@ public class LoginServlet extends HttpServlet {
 //  		result == 1 => 로그인 성공
 //  		result == 0 => 암호 틀림
 //  		result == -1 => 아이디 틀림
+//  		로그인 로직 : 먼저 아이디와 패스워드를 입력받고 db에 둘 다 전달해서 일치하면(userCheck) getMember라는 메서드를 통해 아이디를 넣고 정보를 가져와서 세션에 로그인 된 회원의 정보를 저장함 
   		int result = mDao.userCheck(userid, pwd);
   		if(result == 1) {
   			MemberVO vo = mDao.getMember(userid); //로그인에 성공한 정보를 가져옴

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
-
+//업로드를 get으로 하면 용량이 적어서 오류날수도 있음.. 따라서 업로드는 post로만!
 @WebServlet("/upload2.do")
 public class MultiUploadServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

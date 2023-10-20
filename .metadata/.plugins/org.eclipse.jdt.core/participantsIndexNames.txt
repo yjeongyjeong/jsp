@@ -23,6 +23,10 @@ D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\198
 \Practice_09\src\main\java
 D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\713670611.index
 \mvcBoard2\src
+D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3444962523.index
+\web-study-10\src\main\java
+D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\410460874.index
+\web-study-10-myself\src\main\java
 D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\544913403.index
 \Sample\src\main\java
 D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1710148052.index
@@ -31,6 +35,8 @@ D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\337
 \web-study-09-re\src\main\java
 D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3247381580.index
 \self-study-09\src
+D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1147740209.index
+\web-study-10-myself\src\main\java
 D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3765349995.index
 \self-study\src\main\java
 D:\javaWorks\works\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\219853942.index
