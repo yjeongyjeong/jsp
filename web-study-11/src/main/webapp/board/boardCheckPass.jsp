@@ -16,7 +16,10 @@
 	<div align="center">
 		<h1 align="left">비밀번호 확인</h1>
 		<form action="BoardServlet" name="frm" method="get">
-		<!-- ${board.num}가 먹지 않음 왜일까? 포워드로 넘겨받았는데 왜일까? -->
+		<!-- ${board.num}가 먹지 않음 왜일까? 포워드로 넘겨받았는데 왜일까? 
+		클라이언트에서 바로 날아온거라 board자체가 없나봄?
+		setattribute는 담은거고....
+		-->
 			<input type="hidden" name="command" value="board_check_pass">
 			<input type="hidden" name="num" value="${param.num}">
 			
