@@ -126,4 +126,78 @@ public class BoardDAO {
 	}
 	
 	
+	
+	public int updateBoard(BoardVO vo) {
+		int result = -1;
+		String sql = "update board set name=?, pass=?, email=?, title=? ,"
+				+ "content=? where num=?";
+		Connection conn = null;
+		PreparedStatement ps = null;
+		
+		try {
+			conn = DBManager.getConnection(); //DB연결(로그인)
+			ps = conn.prepareStatement(sql); //sql구문 입력
+			
+			ps.setString(1, vo.getName());
+			ps.setString(2, vo.getPass());
+			ps.setString(3, vo.getEmail());
+			ps.setString(4, vo.getTitle());
+			ps.setString(5, vo.getContent());
+			ps.setInt(6, vo.getNum());
+			
+			result = ps.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(conn, ps);
+		}
+		
+		return result;
+	}
+	
+	public int deleteBoard(int num) {
+		int result = -1;
+		String sql = "delete from board where num=?";
+		Connection conn = null;
+		PreparedStatement ps = null;
+		
+		try {
+			conn = DBManager.getConnection(); //DB연결(로그인)
+			ps = conn.prepareStatement(sql); //sql구문 입력
+			
+			ps.setInt(1, num);
+			
+			result = ps.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(conn, ps);
+		}
+		
+		return result;
+	}
+//623page int형으로 받아주는게 관습... create update delete는
+	public int updateReadCount(int num) {
+		String sql = "update board set readcount=readcount+1 where num=?";
+		int result = -1;
+		Connection conn = null;
+		PreparedStatement ps = null;
+		
+		try {
+			conn = DBManager.getConnection(); //DB연결(로그인)
+			ps = conn.prepareStatement(sql); //sql구문 입력			
+			ps.setInt(1, num);
+			
+			result = ps.executeUpdate(); //꼭 executeupdate해주기!!!
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBManager.close(conn, ps);
+			System.out.println("finally 오케이");
+		}		
+		return result;
+	}
 }

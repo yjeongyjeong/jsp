@@ -35,7 +35,7 @@ public class BoardServlet extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");
+		//request.setCharacterEncoding("utf-8"); ->여기서 해도 되고 필터를 만들어서 걸러줘도 됨
 		doGet(request, response); //post요청이 와도 get으로 보내겠다는 의미
 	}
 }

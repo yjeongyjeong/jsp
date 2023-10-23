@@ -15,10 +15,15 @@ public class BoardViewFormAction implements Action {
 		
 		String url = "/board/boardView.jsp";
 		String num = request.getParameter("num");
+		BoardDAO bDao = BoardDAO.getInstance();
+
 		//확인용
 		System.out.println("num : " + request.getParameter("num"));
+				
+		//count 증가 648page
+		bDao.updateReadCount(Integer.parseInt(num));
 		
-		BoardDAO bDao = BoardDAO.getInstance();
+		
 		BoardVO vo = bDao.selectOneByNum(Integer.parseInt(num));
 		
 		request.setAttribute("board", vo);

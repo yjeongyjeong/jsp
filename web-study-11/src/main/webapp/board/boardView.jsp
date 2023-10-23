@@ -42,10 +42,13 @@
 		<hr>
 		<br> 
 		<input type="button" value="게시글 수정" onclick="open_win('BoardServlet?command=board_check_pass_form&num=${board.num}', 'update')"> 
-		<input type="button" value="게시글 삭제"> 
+		<input type="button" value="게시글 삭제" onclick="open_win('BoardServlet?command=board_check_pass_form&num=${board.num}', 'delete')"> 
 		<input type="button" value="게시글 리스트" onclick="location.href='BoardServlet?command=board_list' "> 
 		<input type="button" value="게시글 등록" onclick="location.href='BoardServlet?command=board_write-form' "> 
-
+		
+<!-- board.js에서 function open_win(url, name){
+    window.open(url, name, "width=500, height=230");로 인해 url과 name을 매개변수로 받는 새창이 열리게됨
+} -->
 	</div>
 </body>
 </html>
