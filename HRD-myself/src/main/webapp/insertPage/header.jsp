@@ -15,11 +15,11 @@
 
 	<div id="wrap" align="center">
 		<h1>이건 헤더</h1>
-		<table class="list" >
+		<table class="list" border="1">
 			
-				<th onclick="">회원등록</th>
-				<th>회원목록조회/수정</th>
-				<th>회원매출조회</th>
-				<th >홈으로.</th>
+				<th><a href="MemberServlet?command=member_join_form">회원등록</a></th>
+				<th><a href="MemberServlet?command=member_list">회원목록조회/수정</a></th>
+				<th><a href="MemberServlet?command=member_total">회원매출조회</a></th>
+				<th ><a href="MemberServlet?command=member_join">홈으로.</a></th>
 			</table>
 			</div>

@@ -34,7 +34,7 @@ public class Filter extends HttpFilter implements javax.servlet.Filter {
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		System.out.println("filter");
+		//System.out.println("filter");
 		request.setCharacterEncoding("utf-8");
 		chain.doFilter(request, response);
 	}

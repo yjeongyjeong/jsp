@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div id="wrap" align="center">
-		<h1>게시글 리스트</h1>
+		<h1>회원목록 조회/수정</h1>
 		<table class="list" border="1">
 
 			<th>회원번호</th>
@@ -23,7 +23,7 @@
 				<c:forEach items="${memberList}" var="member">
 					<tr class="record">
 						<td><a
-							href="BoardServlet?command=member_view&custno=${member.custno}">${member.custno}</a></td>
+							href="MemberServlet?command=member_update_form&custno=${member.custno}">${member.custno}</a></td>
 						<!-- num이 pk라서 같이 가야함 -->
 						<td>${member.custname}</td>
 						<td>${member.phone}</td>

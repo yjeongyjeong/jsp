@@ -106,8 +106,9 @@
 
 			  
 			  
-			  <Context docBase="HRD-myself" path="/HRD-myself" reloadable="true" source="org.eclipse.jst.jee.server:HRD-myself">
 			  
+			  
+			  <Context docBase="JspExam01" path="/JspExam01" reloadable="true" source="org.eclipse.jst.jee.server:JspExam01">
 			  <Resource name="jdbc/myoracle" auth="Container"
               type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
               url="jdbc:oracle:thin:@127.0.0.1:1521:xe"

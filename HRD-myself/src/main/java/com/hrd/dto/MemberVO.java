@@ -15,6 +15,18 @@ import lombok.ToString;
     grade char(1),
     city char(2)
 ); 
+
+create table money_tbl_02(
+    custno number(6) not null,
+    salenol number(8) not null,
+    pcost number(8),
+    amount number(4),
+    price number(8),
+    pcode varchar2(4),
+    sdate date,
+    constraint money_tbl_02_PK primary key(custno, salenol),
+    foreign key (custno) REFERENCES member_tbl_02(custno)
+);
  */
 @Getter @Setter @ToString
 public class MemberVO {
@@ -25,4 +37,11 @@ public class MemberVO {
 	private Timestamp joindate;
 	private String grade;
 	private String city;
+
+	private int salenol;
+	private int pcost;
+	private int amount;
+	private int price;
+	private String pcode;
+	private String date;
 }
