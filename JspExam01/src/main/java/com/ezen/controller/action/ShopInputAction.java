@@ -23,7 +23,7 @@ public class ShopInputAction implements Action {
 		
 		ShopDAO sDao = ShopDAO.getInstance();
 		int result = sDao.insertShop(vo);
-		
+		//회원가입이 완료되면 바로 리스트 조회창으로 넘어감
 		if(result == 1) {
 		new ShopList().execute(request, response);
 		}
