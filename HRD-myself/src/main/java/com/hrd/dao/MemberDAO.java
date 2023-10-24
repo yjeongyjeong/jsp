@@ -7,7 +7,6 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.ezen.dao.ShopDAO;
 import com.hrd.dto.MemberVO;
 import com.hrd.util.DBUtil;
 

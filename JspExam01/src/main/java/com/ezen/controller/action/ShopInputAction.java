@@ -23,6 +23,10 @@ public class ShopInputAction implements Action {
 		
 		ShopDAO sDao = ShopDAO.getInstance();
 		int result = sDao.insertShop(vo);
+		
+		if(result == 1) {
+		new ShopList().execute(request, response);
+		}
 	}
 
 }

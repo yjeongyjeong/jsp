@@ -3,12 +3,15 @@ package com.ezen.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 import com.ezen.dto.MemberVO;
+import com.ezen.dto.ShopVO;
 
 public class ShopDAO {
 	private static ShopDAO instance = new ShopDAO();
@@ -112,6 +115,44 @@ public class ShopDAO {
 		}
 
 		return result;
+	}
+
+	public List<MemberVO> shopList() {
+		List<MemberVO> list = new ArrayList<MemberVO>();
+		MemberVO vo = null;
+		
+		String sql = "select * from member_tbl_02 order by custno desc";
+		
+		Connection conn = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+
+		try {
+			conn = ShopDAO.getConnection();
+			ps = conn.prepareStatement(sql);
+			rs = ps.executeQuery();
+
+			while (rs.next()) {
+				vo = new MemberVO();
+				
+				vo.setCustno(rs.getInt("custno"));
+				vo.setCustname(rs.getString("custname"));
+				vo.setPhone(rs.getString("phone"));
+				vo.setAddress(rs.getString("address"));
+				vo.setJoindate(rs.getString("joindate"));
+				vo.setGrade(rs.getString("grade"));
+				vo.setCity(rs.getString("city"));
+				
+//				System.out.println(vo);
+				
+				list.add(vo);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			ShopDAO.close(conn, ps, rs);
+		}
+		return list;
 	}
 
 }

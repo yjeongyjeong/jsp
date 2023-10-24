@@ -1,0 +1,30 @@
+/* tag rest */
+* {margin:0;padding:0;}
+ul, li {list-style:none;}
+body{font-family:"Malgun Gothic";}
+a{text-decoration:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+/* default layout  */
+.logo{height:80px;background:#09F;color:#fff;line-height:80px;text-align:center;}
+.gnb{height:40px;line-height:40px;text-align:center;background:#06F;}
+.gnb ul{display:inline-block;}
+.gnb ul:after{content:"";display:block;clear:both;}
+.gnb li{float:left;}
+.gnb a{display:block;padding:0 40px;color:#fff;font-size:17px;transition:0.3s;}
+.gnb a:hover{background:#09F;}
+.footer{text-align:center;background:#666;color:#fff;padding:20px 0;text-transform:uppercase;font-size:11px;}
+
+/* content */
+.container{background:#f5f5f5;padding:50px;}
+.content{width:800px;margin:0 auto;background:#fff;padding:20px;font-size:13px;}
+.content h2{margin-bottom:20px;text-align:center;}
+.content table{border-top:2px solid #666;width:100%;}
+.content td,
+.content th{height:40px;border-bottom:1px solid #ddd;padding:0 10px;}
+.content th{background:#f5f5f5;}
+.content input[type="text"]{height:30px;border:1px solid #ddd;padding:0 10px;}
+
+/* public class*/
+.btn_group{margin-top:20px;text-align:center;}
+.btn_group button{width:80px;height:30px;border:none;background:#444;color:#fff;}

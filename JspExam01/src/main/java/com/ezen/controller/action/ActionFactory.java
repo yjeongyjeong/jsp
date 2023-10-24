@@ -19,7 +19,9 @@ public class ActionFactory {
 		} else if ( command.equals( "shop_input_form" )) {
 			action = new ShopInputFormAction();
 		} else if ( command.equals( "shop_input" )) {
-		action = new ShopInputAction();
+			action = new ShopInputAction();
+		} else if( command.equals( "shop_list" ) ) {
+			action = new ShopList();
 		}
 		return action;
 	}
