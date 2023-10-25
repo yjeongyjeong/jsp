@@ -1,9 +1,0 @@
-package com.magic.dto.EmployeesDAO;
-
-public class EmployeesDAO {
-private EmployeesDAO() {
-}
-
-EmployeesDAO instance = new EmployeesDAO();
-
-}

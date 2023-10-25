@@ -1,5 +1,0 @@
-package com.saeyan.dao;
-//DB와 연동되어 data access
-public class MemberDAO {
-
-}

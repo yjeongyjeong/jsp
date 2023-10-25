@@ -59,11 +59,11 @@ public class MemberDAO {
 					ps.setString(1, userid);
 					rs = ps.executeQuery();
 					if(rs.next()) { //일단 값이 있는지 먼저...
-					if( rs.getString("pwd").equals(pwd)) {
-						result = 1; //아이디가 있고 비번이 일치
-					} else {
-						result = 0; //아이디가 있는데 비번이 불일치
-					}
+						if( rs.getString("pwd").equals(pwd)) {
+							result = 1; //아이디가 있고 비번이 일치
+						} else {
+							result = 0; //아이디가 있는데 비번이 불일치
+						}
 					} else {
 						result = -1; //아이디가 아예 없음
 					}
