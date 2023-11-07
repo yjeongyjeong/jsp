@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="flightList"/>
+		<item key="selection" value="My"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="my"/>
 			<item value="flightList"/>
 			<item value="btnSubmit"/>
 			<item value="check availability"/>
@@ -22,7 +23,6 @@
 			<item value="tm-main"/>
 			<item value="main"/>
 			<item value="tm-main-content"/>
-			<item value="table"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
@@ -31,7 +31,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="-542"/>
+		<item key="DIALOG_X_ORIGIN" value="8"/>
 		<item key="DIALOG_Y_ORIGIN" value="450"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
