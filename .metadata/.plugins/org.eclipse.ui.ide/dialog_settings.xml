@@ -8,6 +8,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\a\Desktop\project"/>
+			<item value="D:\javaWorks\works\kakaoAirlineProject\project01"/>
+			<item value="D:\javaWorks\works\kakaoAirlineProject\com.user (20) (2)"/>
 			<item value="C:\Users\a\Desktop\com.user (20) (2)"/>
 			<item value="C:\Users\a\Desktop\프로젝트\프로젝트\com.user (20)"/>
 			<item value="C:\Users\a\Desktop\프로젝트\프로젝트\com.user (19)"/>
